@@ -1,0 +1,120 @@
+/* stijl.css - labo 7, kaaien (reset.css is linked before this file) */
+
+/* === fonts === */
+@font-face {
+    font-family: "Fraunces" ;
+    src: url("../fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+}
+/* === tokens === */
+:root {
+    --color-surface: hsl(200 30% 97%);
+    --color-ink: hsl(205 40% 12%);
+    --color-muted: hsl(205 12% 40%);
+    --color-accent: hsl(200 70% 32%);
+    --color-line: hsl(200 20% 82%);
+    --color-overlay: rgb(0 0 0 / 0.55);
+    --font-heading: "Fraunces" , Georgia, serif;
+    --font-body: Verdana, sans-serif;
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+}
+
+/* === base === */
+
+.held {
+    display: grid;
+    align-items: center;
+    background-image: url("../afbeeldingen/kaaien.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70svh;
+    padding: clamp(1rem, 5vw, 4rem);
+}
+
+.paneel {
+    max-width: 36rem;
+    padding: var(--space-l);
+    background-color: var(--color-overlay);
+    color: var(--color-surface);
+}
+
+.bovenkop {
+    font-size: var(--text-s);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: var(--space-s);
+    letter-spacing: 0.12em;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 3,5rem);
+    line-height: 1.1;
+    margin-bottom: var(--space-m);
+    
+}
+
+.lead {
+    font-size: var(--text-l);
+    margin-bottom: var(--space-l);
+}
+
+.knop {
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    font-weight: bold;
+    padding: var(--space-s) var(--space-l);
+    text-decoration: none;
+}
+
+.knop:hover {
+    color: var(--color-accent);
+    background-color: var(--color-surface);
+}
+
+
+main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-l);
+    max-width: 64rem;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    margin-left: var(--space-m);
+    margin-right: var(--space-m);
+}
+
+h2 {
+    font-size: var(--text-xl);
+    color: var(--color-accent);
+    margin-bottom: var(--space-s);
+
+}
+
+main p {
+    max-width: 65ch;
+    margin-bottom: var(--space-m);
+}
+
+.praktisch {
+    border: 1px solid,blue;
+    padding: var(--space-m);
+    margin-bottom: var(--space-xl);
+    min-height: 18rem;
+    background-image: url("../afbeeldingen/kompas.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+}
+/* === the hero: photo as background, text on a dark panel (7.10, F7.10) === */
+
+/* === main, aside with a corner decoration, footer with a repeating tile === */

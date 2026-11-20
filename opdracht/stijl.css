@@ -80,7 +80,7 @@ footer ul li{
 }
 
 /*1200px / 16 --> 75rem*/
-@media(min-width:75rem){
+@media(min-width:50rem){
     
     header{
         display:flex; 

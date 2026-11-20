@@ -154,6 +154,7 @@ footer p {
 
 @media(min-width:50rem) {
 
+    /*
     header {
     background-color: #F8D755;
     display: flex;
@@ -162,7 +163,6 @@ footer p {
     padding:0.5rem ;
     width:10rem;
     height: 100vh;
-    position: absolute;
 }
 
 header h1{
@@ -187,14 +187,16 @@ nav a:hover {
     color: yellow;
     padding: 0.2rem;
 }
+    */
     
-    /*
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns : 1fr 1fr 1fr 1fr 1fr 1fr
+    }
     main {
         height: 100vh;
         width: 100vh;
-        display: grid;
-        grid-template-rows: 1fr 2fr 1fr 0.5fr;
-        grid-template-columns : 1fr 2fr 1fr 1fr 3fr 1fr
     }
 
 
@@ -202,7 +204,7 @@ nav a:hover {
         grid-column: 1/2;
         grid-row: 2/7;
     }
-    */
+    
 
 
 
